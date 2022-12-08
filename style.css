@@ -16,9 +16,9 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #69F7BE;
-  --color-text-main: #000000;
-  --color-primary: #FFFF00;
+  --color-bg:  #000000;
+  --color-text-main:  #FFFFFF;
+  --color-primary:  #FFFFFF;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
@@ -33,20 +33,6 @@ to this section's matching END comment to see page-specific styles.
 [hidden] {
   display: none !important;
 }
-
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
-}
-
 /* Our remix on glitch button */
 .btn--remix {
   font-family: HK Grotesk;
@@ -62,7 +48,7 @@ to this section's matching END comment to see page-specific styles.
   box-sizing: border-box;
   border-radius: 4px;
   text-decoration: none;
-  color: #000;
+  color:  #FFFFFF;
   white-space: nowrap;
   margin-left: auto;
 }
@@ -90,7 +76,7 @@ a:not(.btn--remix):visited {
   font-style: normal;
   font-weight: normal;
   font-size: 1.1rem;
-  color: #000;
+  color:  #FFFFFF;
   text-decoration: none;
   border-style: none;
 }
@@ -131,7 +117,7 @@ body {
 
 /* Very light scaling for our illustration */
 .title {
-  color: #2800FF;
+  color:  #FFFFFF;
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
@@ -167,7 +153,7 @@ input {
 
 /* Subheading */
 h2 {
-  color: #2800FF;
+  color:  #FFFFFF;
 }
 
 /* Interactive image */
