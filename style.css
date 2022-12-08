@@ -258,3 +258,122 @@ body {
 .tabset {
   max-width: 65em;
 }
+// Colors
+@color-primary: #64A9FF;
+@color-error: #E60000;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row {
+    &--flex {
+        display: flex;
+        flex-wrap: wrap;
+        
+        > [class*="col-"] {
+            display: flex;
+        }
+    }
+}
+
+.wrapper {
+    min-height: 100vh;
+    background-color: #ddd;
+}
+
+.title {
+    margin: 30px 10px;
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 30px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
+    background-color: #fff;
+    
+    &__content {
+        padding: 30px;
+        text-align: center;
+    }
+    
+    &__img {
+        border-radius: 50%;
+        box-shadow: 0 4px 4px 1px rgba(0, 0, 0, .2);
+    }
+    
+    &__name {
+        margin: 20px 10px;
+        font-size: 24px;
+        text-transform: capitalize;
+    }
+    
+    &__social {
+        margin: 0 -5px;
+        
+        &-item {
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            color: inherit;
+            transition: all .3s;
+            
+            &:hover {
+                border-color: @color-primary;
+                background-color: @color-primary;
+                
+                .card__social-icon {
+                    color: #fff;
+                }
+            }
+        }
+        
+        &-icon {
+            line-height: 2em;
+        }
+    }
+    
+    &__cta {
+        position: relative;
+        display: flex;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: inherit;
+        transition: all .3s;
+        
+        /*
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 20%;
+            height: 1px;
+            background-color: #ccc;
+            transform: translateX(-50%);
+        }
+        */
+        
+        &-item {
+            display: inline-block;
+            flex: 1;
+            padding: 20px;
+            border-radius: 0;
+            font-size: 1.5em;
+        }
+    }
+    
+    &--grid {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        
+        .card__cta {
+            margin-top: auto;
+        }
+    }
+}
