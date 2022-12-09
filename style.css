@@ -168,6 +168,10 @@ h2 {
   color:  #FFFFFF;
 }
 
+h3 {
+  color:  #4dff00;
+}
+
 /* Interactive image */
 .illustration:active {
   transform: translateY(5px);
