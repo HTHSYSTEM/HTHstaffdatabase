@@ -1,3 +1,15 @@
+.full-width {
+  width: 100%;
+}
+.500 {
+  height:99px;
+}
+.pink {
+  background: pink;
+}
+.blue {
+  background: steelblue;
+}
 /******************************************************************************
 START Glitch hello-app default styles
 
