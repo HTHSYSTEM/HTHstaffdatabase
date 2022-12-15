@@ -373,7 +373,7 @@ body {
 }
 
 /* Add media queries for responsiveness. This will center both the text and the image inside the container */
-@media (max-width: 500px) {
+@media (max-width: 200px) {
   .container {
     text-align: center;
   }
