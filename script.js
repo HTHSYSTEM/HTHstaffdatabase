@@ -1,13 +1,3 @@
-var password = prompt("Enter in the password");
-        if (password=="1234") {
-            //location = "media.html"
-          
-        }
-        else 
-        {
-          document.getElementById("msg").value = "test";  
-          //location = "error.html"
-        }
 
 /*
 This is your site JavaScript code - you can add interactivity and carry out processing
