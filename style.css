@@ -346,7 +346,7 @@ body {
 /* Style the container with a rounded border, grey background and some padding and margin */
 .container {
   border: 2px solid #ccc;
-  background-color: #eee;
+  background-color: #000000;
   border-radius: 5px;
   padding: 16px;
   margin: 16px 0;
