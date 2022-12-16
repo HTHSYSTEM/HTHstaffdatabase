@@ -173,6 +173,12 @@ h3 {
   color: #4dff00;
 }
 
+h4 {
+  color: #000000;
+}
+
+
+
 /* Interactive image */
 .illustration:active {
   transform: translateY(5px);
