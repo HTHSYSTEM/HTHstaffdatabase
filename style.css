@@ -319,116 +319,83 @@ body {
 }
 
 /* second set tab
-@import "bourbon";
 
-/* Android 2.3 :checked fix */
-@keyframes fake {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 1;
-    }
-}
-body {        
-    animation: fake 1s infinite;
+* {
+  box-sizing: border-box;
 }
 
-.worko-tabs {
-    margin: 20px;
-  	width: 80%;
-  
-    .state{
-      position: absolute;
-      left: -10000px;
-    }
-  
-    .flex-tabs{
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-        
-        .tab{
-          flex-grow: 1;
-          max-height: 40px;
-        }
-      
-        .panel {
-          background-color: #fff;
-          padding: 20px;
-          min-height: 300px;
-          display: none;
-          width: 100%;
-          flex-basis: auto;
-      }
-    }
-
-    .tab {
-      display: inline-block;
-      padding: 10px;
-      vertical-align: top;
-      background-color: #eee;
-      cursor: hand;
-      cursor: pointer;
-      border-left: 10px solid #ccc;
-      
-        &:hover{
-          background-color: #fff;
-        }
-    }  
+section {
+  position: relative;
+  width: 606px;
+  margin: 0 auto;
+  z-index: 0;
+  color: white;
 }
 
-#tab-one:checked ~ .tabs #tab-one-label,
-#tab-two:checked ~ .tabs #tab-two-label,
-#tab-three:checked ~ .tabs #tab-three-label,
-#tab-four:checked ~ .tabs #tab-four-label{
-    background-color: #fff;
-    cursor: default;
-    border-left-color: #69be28;
+section:after {
+  content: 'Click on a tab above!';
+  position: absolute;
+  left: 0;
+  top: 38px;
+  width: 100%;
+  font-size: 1.8em;
+  text-align: center;
+  background-color: #5E6B7F;
+  padding: 40px 0;
 }
 
-#tab-one:checked ~ .tabs #tab-one-panel,
-#tab-two:checked ~ .tabs #tab-two-panel,
-#tab-three:checked ~ .tabs #tab-three-panel,
-#tab-four:checked ~ .tabs #tab-four-panel{
-    display: block;
+button {
+  cursor: pointer;
+  width: 199px;
+  display: inline-block;
+  background-color: #5E6B7F;
+  color: white;
+  text-align: center;
+  transition: .25s ease;
+  border: none;
+  padding: 10px;
+  border-radius: 12px 12px 0 0;
 }
 
-@media (max-width: 600px){
-  .flex-tabs{
-    flex-direction: column;
-    
-    .tab{
-      background: #fff;
-      border-bottom: 1px solid #ccc;
-      
-        &:last-of-type{
-          border-bottom: none;
-        }
-    }
-    
-    #tab-one-label{order:1;}
-    #tab-two-label{order: 3;}
-    #tab-three-label{order: 5;};
-    #tab-four-label{order: 7;};
-    #tab-one-panel{order: 2;}
-    #tab-two-panel{order: 4;}
-    #tab-three-panel{order: 6;}
-    #tab-four-panel{ order: 8;}
-  }
-  
-    #tab-one:checked ~ .tabs #tab-one-label,
-    #tab-two:checked ~ .tabs #tab-two-label,
-    #tab-three:checked ~ .tabs #tab-three-label,
-    #tab-four:checked ~ .tabs #tab-four-label{
-      border-bottom: none;
-    }
-  
-  #tab-one:checked ~ .tabs #tab-one-panel,
-  #tab-two:checked ~ .tabs #tab-two-panel,
-  #tab-three:checked ~ .tabs #tab-three-panel,
-  #tab-four:checked ~ .tabs #tab-four-panel{
-    border-bottom: 1px solid #ccc;
-  }
+div:focus button, button:focus {
+  background-color: #8DA1BF;
+  outline: none;
 }
 
+button:focus + p, div:focus P {
+  display: block;
+  position: absolute;
+  background-color: #8DA1BF;
+  height: 120px;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+  outline: none;
+  top: 0px;
+  text-align: center;
+  padding-top: 48px;
+}
+
+p {
+  display: none;
+  font-size: 2em;
+}
+
+div {
+  display: inline-block;
+}
+
+div:focus {
+  outline: none;
+}
+
+body {
+  padding: 3em;
+}
+
+.p {
+  margin-top: 300px;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
