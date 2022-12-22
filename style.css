@@ -576,7 +576,7 @@ body {
 /* Tab active */
 
 .tablinks.active {
-  background-color: white;
+  background-color: black;
   z-index: 0;
   border-right: 0px;
   border-left: 0px;
@@ -663,7 +663,7 @@ body {
 /* tab content */
 
 .wrapper_tabcontent {
-  background-color: white;
+  background-color: black;
   margin-top: 0px;
   z-index: -3;
   position: relative;
